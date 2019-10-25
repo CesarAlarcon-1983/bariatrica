@@ -23,9 +23,11 @@ body {
     font-size: $sm;
 }
 
-a {
+a,
+button {
     color:$link;
     transition: all $duration $easingLight;
+    cursor: pointer;
 
     &:hover{
         color:$linkHover;

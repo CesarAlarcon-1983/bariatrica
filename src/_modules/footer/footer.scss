@@ -1,3 +1,118 @@
 .footer {
-    
+    padding: 40px 0;
+
+    @include mq(md) {
+        padding: 80px 0;
+    }
+
+    &__logo {
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+
+        @include mq(md) {
+            margin-bottom: 0;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        margin-bottom: 20px;
+
+        @include mq(md) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__list {
+        width: 50%;
+    }
+
+    &__item {
+        margin-bottom: 20px;
+        
+        a {
+            color: $darkGray;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 900;
+        }
+    }
+
+    &__container {
+        display: flex;
+    }
+
+    &__group {
+        width: 100%;
+
+        &:first-child {
+            width: 40%;
+        }
+
+        &:last-child {
+            width: 60%;
+        }
+
+        @include mq(md) {
+            width: 50%;
+        }
+    }
+
+    &__group-title {
+        color: $darkGray;
+        font-size: 14px;
+        margin: 0;
+        margin-bottom: 20px;
+        font-weight: 900;
+        
+        @include mq(md) {
+            text-align: center;
+        }
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        @include mq(md) {
+            justify-content: center;
+        }
+
+        li {
+            margin: 0 20px 0 0;
+
+            @include mq(md) {
+                margin: 0 10px;
+            }
+        }
+
+        a {
+            color: $darkGray;
+            font-size: 20px;
+        }
+    }
+
+
+    &__button {
+        width: 100%;
+        line-height: 40px;
+        outline: none;
+        text-align: center;
+        border: 1px solid $blue;
+        color: $blue;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 7px;
+        background: $white;
+    }
 }
