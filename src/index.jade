@@ -1,6 +1,7 @@
 extends _layouts/base
 
 include ./_modules/slider/slider
+include ./_modules/locations/locations
 
 block content
     main.home
@@ -85,38 +86,8 @@ block content
                                             p ¿Qué es<br>la obesidad?
                                     .home__links__image
                                         img(src="https://picsum.photos/id/237/300/300")
-        section.home__locations
-            h3.home__locations__subtitle clínicas
-            h2.home__locations__title Donde atendemos
-            .container
-                .row
-                    .col-24.col-md-22.offset-md-1
-                        .row
-                            .col-24.col-md-8
-                                .home__locations__container
-                                    .home__locations__image
-                                        img(src="https://picsum.photos/id/237/300/300")
-                                    .home__locations__content
-                                        h3.home__locations__content-title IADT - Instituto Argentino de Diagnóstico y Tratamiento
-                                        p.home__locations__content-text Consultorios externos<br>Marcelo T. de Alvear 2439, CABA
-                                        a.home__locations__map-link(href="#") ver mapa
-                            .col-24.col-md-8
-                                .home__locations__container
-                                    .home__locations__image
-                                        img(src="https://picsum.photos/id/237/300/300")
-                                    .home__locations__content
-                                        h3.home__locations__content-title Centro Médico Pilares
-                                        p.home__locations__content-text Edificio Bureau Pilar<br>Panamericana Km. 49,5<br>Turnos Online
-                                        a.home__locations__webpage(href="http://www.cmpilares.com" target="_blank") www.cmpilares.com
-                                        a.home__locations__map-link(href="#") ver mapa
-                            .col-24.col-md-8
-                                .home__locations__container
-                                    .home__locations__image
-                                        img(src="https://picsum.photos/id/237/300/300")
-                                    .home__locations__content
-                                        h3.home__locations__content-title Consultorios Médicos Tortugas Norte
-                                        p.home__locations__content-text Necochea G. C. 3044<br>Maunel Alberti, Buenos Aires
-                                        a.home__locations__map-link(href="#") ver mapa
+        +locations()
+
         section.home__testimonios
             .home__testimonios__background
                 img(src="https://picsum.photos/id/237/1200/900")

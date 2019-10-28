@@ -4,7 +4,6 @@
 
     background: $lightestGray;
     position: relative;
-    margin-top: 10vh;
     
     &__hero { 
         position: relative;
@@ -346,103 +345,6 @@
         }
     }
 
-    &__locations {
-        padding: 50px 0;
-
-        @include mq(md) {
-            padding: 100px 0;
-        }
-
-        &__subtitle {
-            color: $blue;
-            text-transform: uppercase;
-            font-size: 16px;
-            text-align: center;
-            margin: 0;
-            margin-bottom: 10px;
-
-            @include mq(md) {
-                font-size: 20px;
-            }
-        }
-
-        &__title {
-            color: $darkestGray;
-            font-size: 24px;
-            letter-spacing: 1.3px;
-            text-align: center;
-            margin: 0;
-            margin-bottom: 20px;
-
-            @include mq(md) {
-                font-size: 28px;
-            }
-        }
-
-        &__container {
-            border-radius: 7px;
-            overflow: hidden;
-            margin-bottom: 20px;
-
-            @include mq(md) {
-                margin-bottom: 0;
-            }
-        }
-
-        &__image {
-            width: 100%;
-            height: 0;
-            overflow: hidden;
-            padding-bottom: 60%;
-            position: relative;
-
-            img {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate3d(-50%, -50%, 0);
-                width: 100%;
-                height: auto;
-            }
-        }
-
-        &__content {
-            background: $white;
-            padding: 20px;
-            position: relative;
-            min-height: 220px;
-        }
-
-        &__content-title {
-            margin: 0;
-            margin-bottom: 20px;
-            color: $blue;
-        }
-
-        &__content-text {
-            margin: 0;
-            margin-bottom: 20px;
-            color: $darkestGray;
-            font-size: 18px;
-        }
-
-        &__webpage {
-            color: $blue;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        &__map-link {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: 900;
-            font-size: 14px;
-        }
-    }
-
     &__testimonios {
         position: relative;
         overflow: hidden;
@@ -467,17 +369,7 @@
             }
         }
 
-        &:after {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to right, $darkestBlue, $darkBlue, $midBlue, $blue);
-            opacity: .9;
-            pointer-events: none;
-        }
+        @include gradientOverlay;
 
         &__slider {
             z-index: 20;

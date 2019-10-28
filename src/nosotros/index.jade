@@ -1,0 +1,88 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../';
+
+include ../_modules/locations/locations
+
+block content
+    main.nosotros
+        section.nosotros__hero
+            img(src="https://picsum.photos/id/237/1200/900")
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        .nosotros__hero__container
+                            h2.nosotros__hero__title Quiénes somos
+        section.nosotros__profile
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        .row
+                            .col-24.col-md-12
+                                .nosotros__profile__image
+                                    img(src="https://picsum.photos/id/237/1200/1500")
+                            .col-24.col-md-12
+                                .nosotros__profile__content
+                                    .nosotros__profile__wrapper
+                                        h3.nosotros__profile__subtitle médico cirujano
+                                        h2.nosotros__profile__title Dr. Tomás Jakob
+                                        p.nosotros__profile__text Especialista en Cirugía General.<br>Cirugía Bariátrica y Metabólica Mínimamente Invasiva.<br>Cirugía Laparoscópica Avanzada.
+                                        p.nosotros__profile__subtext
+                                            |MAAC, FACS, IFSO, SAGES, SACO
+                                            span MN 134.354
+                                        ul.nosotros__profile__social
+                                            li
+                                                a
+                                                    i.fa.fa-twitter
+                                            li
+                                                a
+                                                    i.fa.fa-linkedin
+            .nosotros__profile__more-info
+                .container
+                    .row
+                        .col-24.col-md-22.offset-md-1
+                            .row
+                                .col-24.col-md-12
+                                    .nosotros__profile__more-info-text
+                                        p.-blue El Dr. Tomás C. Jakob, médico graduado de la Universidad de Buenos Aires realizó parte de su formación en Francia en el Hôspital Européen Gerorges Pompidou de Paris.
+                                        p Luego regresó al país para completar su especialización en Cirugía General en el Hospital Policial Churruca-Visca donde se ha focalizado en la Cirugía Laparoscópica Mí­nimamente Invasiva y en la Cirugía Bariátrica y Metabólica (Cirugía para la Obesidad y la Diabetes - Bypass Gástrico, Manga Gástrica, Balón Gástrico, Cinturón Gástrico).
+                                        p En el 2009 cuando se encontraba en Francia quedó impresionado con los resultados de la Cirugía Bariátrica y Metabólica al ver los primeros pacientes que controlaban dichas enfermedades y que no requerían más medicación para la Diabetes Tipo 2.
+                                        p Se interesó por la Cirugía Gástrica y las vías de abordaje mínimamente invasivas y en el 2013 emprendió un viaje de perfeccionamiento a dos centros de primer nivel en Estados Unidos en las universidades de Washington y de California. Finalizó su estadía en San Diego en el "Center For The Future of Surgery" en donde comenzó su incursión en la Cirugía Robótica.
+                                .col-24.col-md-12
+                                    .nosotros__profile__more-info-text
+                                        p Actualmente se desempeña como Cirujano Staff del Hospital Churruca y del Centro de Rehabilitación Quirúrgica de Obesidad, participando de más de 500 cirugías al año. Es Director del Programa de Cirugía Bariátrica y Metabólica del Centro Médico Pilares. Ha realizado múltiples trabajos científicos y publicaciones tanto a nivel nacional como internacional.
+                                        p Independientemente de su rigurosa formación técnica y académica, siempre ha prestado especial atención en la relación paciente-médico, entendiendo a la medicina bajo el concepto "bio-psico-social", es decir como una ciencia humana que se nutre de conocimientos científicos para poder brindar cura y alivio a los pacientes.
+                                        p El Dr. Tomas C. Jakob es la quinta generación de médicos de su familia, legado el cual lleva adelante con compromiso y responsabilidad, logrando los más altos estándares internacionales y con una gran vocación de servicio. Entiende que el ejercicio de la Medicina es una gran responsabilidad social con la cual está muy comprometido.
+                                        p.-quote "La Medicina es mas Arte que Ciencia"
+            .container
+                .row
+                    .col-24
+                        button.nosotros__profile__more-button Ver más
+
+        section.nosotros__equipo
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        h2.nosotros__equipo__title Conoce nuestro equipo
+                        
+                        .row
+                            each item in site.data.equipo
+                                .col-12.col-md-8
+                                    .nosotros__equipo__container
+                                        .nosotros__equipo__image
+                                            img(src=item.image)
+                                        .nosotros__equipo__content
+                                            h3.nosotros__equipo__content-title=item.title
+                                            p.nosotros__equipo__text=item.text
+                                            p.nosotros__equipo__subtext=item.subtext
+                                            ul.nosotros__equipo__social
+                                                li
+                                                    a
+                                                        i.fa.fa-twitter
+                                                li
+                                                    a
+                                                        i.fa.fa-linkedin
+                                                        
+        +locations()
