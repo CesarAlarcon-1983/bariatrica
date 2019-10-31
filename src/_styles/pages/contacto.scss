@@ -1,0 +1,92 @@
+.contacto {
+    background: $lightestGray;
+
+    &__container{ 
+        padding: 0 0 50px 0;
+
+        @include mq(md) {
+            padding: 100px 0 60px 0;
+        }
+
+        &__heading{ 
+            height: 100px;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        color: $blue;
+        font-size: 20px;
+
+        @include mq(md) {
+            margin-left: 50px;
+        }
+    }
+
+    &__form {
+        background: $white;
+        padding: 20px 40px;
+        border-radius: 7px;
+        overflow: hidden;
+        
+        @include mq(md) {
+            margin-left: 50px;
+            padding: 40px 60px;
+        }
+    }
+
+    &__form-group {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 50px;
+
+        &--textarea {
+            height: 200px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__input {
+        border: none;
+        border-bottom: 1px solid $midGray;
+        padding: 10px 0;
+        color: $midGray;
+        height: 100%;
+        width: 100%;
+        background: none;
+        resize: none;
+        font-size: 14px;
+        outline: none;
+    }
+
+    &__button {
+        background: $blue;
+        color: $white;
+        height: 50px;
+        text-transform: uppercase;
+        border: 1px solid $blue;
+        border-radius: 7px;
+        box-shadow: 0 5px 20px 1px lighten($blue, .15);
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 14px;
+
+        &--ghost {
+            background: $white;
+            color: $blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: none;
+            margin-bottom: 0;
+            font-size: 16px;
+            font-weight: 700;
+
+            i {
+                margin-right: 10px;
+                font-size: 20px;
+            }
+        }
+    }
+}

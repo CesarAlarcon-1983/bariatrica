@@ -2,7 +2,72 @@ extends ../_layouts/base
 
 block config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - var baseUrl = '../';
 
 block content
-  p que-hacemos page
+    main.que-hacemos
+        section.que-hacemos__hero
+            img(src="/images/que-hacemos/hero.jpg")
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        .que-hacemos__hero__container
+                            h2.que-hacemos__hero__title ¿Qué hacemos?
+        section.que-hacemos__options
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        ul.que-hacemos__options__menu
+                            li.que-hacemos__options__menu-item(data-target="cirugia-1")
+                                button gastrectomía tubular o "manga" gástrica
+                            li.que-hacemos__options__menu-item(data-target="cirugia-2")
+                                button baypass gástrico en y-de-roux
+                            li.que-hacemos__options__menu-item(data-target="cirugia-3")
+                                button baypass gástrico de una anastomosis
+                            li.que-hacemos__options__menu-item(data-target="cirugia-4")
+                                button balón intragástrico
+                        .que-hacemos__options__container
+                            .que-hacemos__options__wrapper(data-content="cirugia-1")
+                                .row
+                                    .col-24.col-md-12
+                                        .que-hacemos__options__video
+                                            iframe(src="https://www.youtube.com/embed/krvLgH0qnIA")
+                                    .col-24.col-md-12
+                                        .que-hacemos__options__content
+                                            h4.que-hacemos__options__subtitle cirugía
+                                            h3.que-hacemos__options__title Gastrectomía tubular o "manga" gástrica
+                                            p.que-hacemos__options__text Consiste en remover el 80-90% de estómago, quedando un estómago tubular de 50 - 100 cc. Esto provoca reestricción a la cantidad de comida que se puede ingerir. Además, la parte del estómago que se extirpa es la que produce una de las hormonas del apetito, la ghrelina, por lo que disminuye la ansiedad por la comida.
+                                            button.que-hacemos__options__button solicitar turno
+                            .que-hacemos__options__wrapper(data-content="cirugia-2")
+                                .row
+                                    .col-24.col-md-12
+                                        .que-hacemos__options__video
+                                            iframe(src="https://www.youtube.com/embed/krvLgH0qnIA")
+                                    .col-24.col-md-12
+                                        .que-hacemos__options__content
+                                            h4.que-hacemos__options__subtitle cirugía
+                                            h3.que-hacemos__options__title Baypass gástrico en y-de-roux
+                                            p.que-hacemos__options__text Consiste en remover el 80-90% de estómago, quedando un estómago tubular de 50 - 100 cc. Esto provoca reestricción a la cantidad de comida que se puede ingerir. Además, la parte del estómago que se extirpa es la que produce una de las hormonas del apetito, la ghrelina, por lo que disminuye la ansiedad por la comida.
+                                            button.que-hacemos__options__button solicitar turno
+                            .que-hacemos__options__wrapper(data-content="cirugia-3")
+                                .row
+                                    .col-24.col-md-12
+                                        .que-hacemos__options__video
+                                            iframe(src="https://www.youtube.com/embed/krvLgH0qnIA")
+                                    .col-24.col-md-12
+                                        .que-hacemos__options__content
+                                            h4.que-hacemos__options__subtitle cirugía
+                                            h3.que-hacemos__options__title Baypass gástrico de una anastomosis
+                                            p.que-hacemos__options__text Consiste en remover el 80-90% de estómago, quedando un estómago tubular de 50 - 100 cc. Esto provoca reestricción a la cantidad de comida que se puede ingerir. Además, la parte del estómago que se extirpa es la que produce una de las hormonas del apetito, la ghrelina, por lo que disminuye la ansiedad por la comida.
+                                            button.que-hacemos__options__button solicitar turno
+                            .que-hacemos__options__wrapper(data-content="cirugia-4")
+                                .row
+                                    .col-24.col-md-12
+                                        .que-hacemos__options__video
+                                            iframe(src="https://www.youtube.com/embed/krvLgH0qnIA")
+                                    .col-24.col-md-12
+                                        .que-hacemos__options__content
+                                            h4.que-hacemos__options__subtitle cirugía
+                                            h3.que-hacemos__options__title Balón intragástrico
+                                            p.que-hacemos__options__text Consiste en remover el 80-90% de estómago, quedando un estómago tubular de 50 - 100 cc. Esto provoca reestricción a la cantidad de comida que se puede ingerir. Además, la parte del estómago que se extirpa es la que produce una de las hormonas del apetito, la ghrelina, por lo que disminuye la ansiedad por la comida.
+                                            button.que-hacemos__options__button solicitar turno

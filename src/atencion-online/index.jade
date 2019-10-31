@@ -2,7 +2,52 @@ extends ../_layouts/base
 
 block config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - var baseUrl = '../';
 
 block content
-  p atencion-online page
+    main.atencion-online
+        section.atencion-online__hero
+            img(src="/images/atencion-online/hero.jpg")
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        .atencion-online__hero__container
+                            h2.atencion-online__hero__title Atención Online
+
+        section.atencion-online__content
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        .row
+                            .col-24.col-md-12
+                                .atencion-online__content__group
+                                    h3.atencion-online__content__title ¡Sabemos que viajar para recibir una consulta médica es un freno para nuestros pacientes internacionales!
+                                    p.atencion-online__content__text Por eso, ellos pueden solicitar una consulta desde cualquier parte del mundo y un asesor se comunicará a la brevedad para poder generar ese primer contacto.
+                                    .atencion-online__content__image
+                                        img(src="/images/atencion-online/atencion.jpg")
+                            .col-24.col-md-12
+                                form.atencion-online__content__form
+                                    h3.atencion-online__content__form-title El paciente puede solicitar la consulta mediante correo electrónico o por telefono
+                                    .atencion-online__content__form-group
+                                        input.atencion-online__content__input(placeholder="Nombre y apellido")
+                                    .atencion-online__content__form-group
+                                        input.atencion-online__content__input(placeholder="Email")
+                                    .atencion-online__content__form-group
+                                        input.atencion-online__content__input(placeholder="Teléfono")
+                                    .atencion-online__content__form-group
+                                        input.atencion-online__content__input(placeholder="País")
+                                    .atencion-online__content__form-group.atencion-online__content__form-group--textarea
+                                        textarea.atencion-online__content__input(placeholder="Consulta")
+                                    .atencion-online__content__form-group
+                                        button.atencion-online__content__button enviar
+
+                                    .atencion-online__content__form-group
+                                        button.atencion-online__content__button.atencion-online__content__button--ghost
+                                            i.fa.fa-whatsapp
+                                            p +5491158152998
+
+
+
+
+
+

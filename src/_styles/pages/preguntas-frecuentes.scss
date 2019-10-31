@@ -1,0 +1,103 @@
+.preguntas-frecuentes{
+    overflow: hidden;
+    
+    &__hero {
+        height: 40vh;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            width: auto;
+            height: 100%;
+
+            @include mq(md) {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__container {
+            display: flex;
+            align-items: center;
+            height: 40vh;
+        }
+
+        &__title {
+            color: $white;
+            font-size: 40px;
+            margin: 0;
+            z-index: 2;
+            position: relative;
+        }
+    }
+
+    &__list {
+        background: $lightestGray;
+        padding: 50px 0 30px 0;
+
+        @include mq(md) {
+            padding: 100px 0 80px 0;
+        }
+    }
+
+    &__cta {
+        padding: 40px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        @include mq(md) {
+            flex-direction: row;
+            padding: 40px 0;
+        }
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            width: auto;
+            height: 100%;
+
+            @include mq(md) {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__text {
+            z-index: 2;
+            margin: 0;
+            margin-bottom: 20px;
+            color: $white;
+            font-size: 24px;
+            
+            @include mq(md) {
+                margin-right: 80px;
+                margin-bottom: 0;
+            }
+        }
+
+        &__button {
+            height: 50px;
+            width: 180px;
+            line-height: 50px;
+            background: $blue;
+            border: none;
+            border-radius: 7px;
+            color: $white;
+            font-weight: 700;
+            text-transform: uppercase;
+            z-index: 2;
+            display: block;
+            text-align: center;
+            box-shadow: 0 5px 20px 1px lighten($blue, .15);
+        }
+    }
+}

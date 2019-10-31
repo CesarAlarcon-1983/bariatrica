@@ -2,7 +2,27 @@ extends ../_layouts/base
 
 block config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - var baseUrl = '../';
+
+  include ../_modules/faq/faq
 
 block content
-  p preguntas-frecuentes page
+    main.preguntas-frecuentes
+        section.preguntas-frecuentes__hero
+            img(src="/images/faqs/hero.jpg")
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        .preguntas-frecuentes__hero__container
+                            h2.preguntas-frecuentes__hero__title Preguntas Frecuentes
+
+        section.preguntas-frecuentes__list
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        +faq()
+        
+        section.preguntas-frecuentes__cta
+            img(src="/images/faqs/cta.jpg")
+            p.preguntas-frecuentes__cta__text ¿Tienes más dudas?
+            a.preguntas-frecuentes__cta__button contactanos

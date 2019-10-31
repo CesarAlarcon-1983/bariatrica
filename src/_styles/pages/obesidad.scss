@@ -1,0 +1,113 @@
+.obesidad {
+    &__hero {
+        height: 40vh;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            width: auto;
+            height: 100%;
+
+            @include mq(md) {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__container {
+            display: flex;
+            align-items: center;
+            height: 40vh;
+        }
+
+        &__title {
+            color: $white;
+            font-size: 40px;
+            margin: 0;
+            z-index: 2;
+            position: relative;
+        }
+    }
+
+    &__articles {
+        background: $lightestGray;
+        padding: 50px 0 10px 0;
+
+        @include mq(md) {
+            padding: 100px 0 60px 0;
+        }
+
+        &__article {
+            border-radius: 7px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px 5px rgba(0,0,0,.15);
+            margin-bottom: 40px;
+        }
+
+        &__filters {
+            width: 100%;
+            margin-bottom: 40px;
+
+            @include mq(md) {
+                margin-bottom: 0;
+            }
+        }
+
+        &__search {
+            background: $white;
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 40px;
+            border-radius: 7px;
+            margin-bottom: 40px;
+
+            i {
+                cursor: pointer;
+                height: 100%;
+                min-width: 40px;
+                text-align: center;
+                line-height: 40px;
+                color: $midGray;
+                font-size: 16px;
+            }
+        }
+
+        &__input {
+            height: 100%;
+            border: none;
+            outline: none;
+            color: $midGray;
+            width: calc(100% - 50px);
+            font-size: 14px;
+        }
+
+        &__options {
+            // display: flex;
+            // flex-direction: column;
+        }
+
+        &__options-title {
+            color: $blue;
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        &__option {
+            margin-bottom: 10px;
+
+            a {
+                color: $darkGray;
+                text-decoration: none;
+                font-size: 14px;
+            }
+        }
+    }
+}

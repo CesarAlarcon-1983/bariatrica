@@ -2,7 +2,68 @@ extends ../_layouts/base
 
 block config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - var baseUrl = '../';
+
+include ../_modules/faq/faq
 
 block content
-  p por-donde-empiezo page
+    main.por-donde-empiezo
+        section.por-donde-empiezo__hero
+            img(src="/images/donde-empiezo/hero.jpg")
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        .por-donde-empiezo__hero__container
+                            h2.por-donde-empiezo__hero__title ¿Qué hacemos?
+        section.por-donde-empiezo__options
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        ul.por-donde-empiezo__options__menu
+                            li.por-donde-empiezo__options__menu-item(data-target="imc")
+                                button Calcula tu IMC<br>¿Soy candidato?
+                            li.por-donde-empiezo__options__menu-item(data-target="faq")
+                                button Procedimiento previo a la operación
+                            li.por-donde-empiezo__options__menu-item(data-target="post")
+                                button Post operatorio<br>¿Cómo sigo?
+                        .por-donde-empiezo__options__container
+                            .por-donde-empiezo__options__wrapper(data-content="imc")
+                                h4.por-donde-empiezo__options__subtitle ¿soy candidato?
+                                h3.por-donde-empiezo__options__title Calcula tu Indice de Masa Corporal
+                                .por-donde-empiezo__options__calculo-imc
+                                    .por-donde-empiezo__options__inputs
+                                        .por-donde-empiezo__options__input
+                                            img(src="https://picsum.photos/id/237/200/300")
+                                            input.-estatura(placeholder="Estatura (cm)" type="number")
+                                        .por-donde-empiezo__options__input
+                                            img(src="https://picsum.photos/id/237/200/300")
+                                            input.-peso(placeholder="Peso (kg)" type="number")
+                                        button.por-donde-empiezo__options__button calcular IMC
+                                    .por-donde-empiezo__options__group
+                                        p.por-donde-empiezo__options__group-text tu IMC es
+                                        span.por-donde-empiezo__options__resultado-imc
+                                .por-donde-empiezo__options__content
+                                    h3.por-donde-empiezo__options__content-title ¿Quiénes son posibles candidatos a la cirugía?<br><br>Aquellos que tienen:"
+                                    .por-donde-empiezo__options__content-group
+                                        .por-donde-empiezo__options__content-index
+                                            span 1
+                                        .por-donde-empiezo__options__content-text IMC mayor a 40
+                                    .por-donde-empiezo__options__content-group
+                                        .por-donde-empiezo__options__content-index
+                                            span 2
+                                        .por-donde-empiezo__options__content-text IMC mayor a 30 asociado a comorbilidades (diabetes, hipertensión, apnea del sueño, dolores articulares y de espalda, depresión, cardiopatías, etc.)
+
+                            .por-donde-empiezo__options__wrapper(data-content="faq")
+                                h4.por-donde-empiezo__options__subtitle procedimiento
+                                h3.por-donde-empiezo__options__title Pasos para la cirugía bariátrica
+                                +faq()
+
+                            .por-donde-empiezo__options__wrapper(data-content="post")
+                                h4.por-donde-empiezo__options__subtitle ¿cómo sigo?
+                                h3.por-donde-empiezo__options__title Post Operatorio
+                                .por-donde-empiezo__options__wrapper-group
+                                    p.por-donde-empiezo__options__text.por-donde-empiezo__options__text--blue Los pacientes deben tener en cuenta que, luego de la operación, deben realizar el seguimiento post operatorio correspondiente. Este implica coordinar una serie de consultas de seguimiento y generar cambios en su estilo de vida después de la cirugía bariátrica.
+                                .por-donde-empiezo__options__wrapper-group
+                                    p.por-donde-empiezo__options__text Se realizarán visitas periodicas que pueden incluir consultas clínicas, pruebas de diagnósitco y de laboratorio o bien consultas online. Se programarán con el fin de mantener el acompañamiento adecuado del paciente y garantizar que el mismo se está recuperando correctamente.
+                                    p.por-donde-empiezo__options__text Luego de la cirugía el paciente buscará generar cambios en el estilo de vida. Algunos de estos cambios se relacionan con establecer una dieta equilibrada, realizar ejercicios con regularidad, entre otros.
+                                    p.por-donde-empiezo__options__text Contamos con un equipo de trabajo altamente capacitado que el proporcionará contención al paciente luego de la cirugía. Este apoyo se puede generar a través de encuentros presenciales u online y se buscará también recibir motivación de otros pacientes que hayan pasado por el mismo camino.

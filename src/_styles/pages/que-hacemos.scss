@@ -1,0 +1,183 @@
+.que-hacemos {
+    &__hero {
+        height: 40vh;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            width: auto;
+            height: 100%;
+
+            @include mq(md) {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__container {
+            display: flex;
+            align-items: center;
+            height: 40vh;
+        }
+
+        &__title {
+            color: $white;
+            font-size: 40px;
+            margin: 0;
+            z-index: 2;
+            position: relative;
+        }
+    }
+
+    &__options {
+        background: $lightestGray;
+
+        &__menu {
+            display: flex;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            flex-wrap: wrap;
+            margin-top: -35px;
+            border-radius: 7px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px 1px rgba(0,0,0,.15);
+        }
+
+        &__menu-item {
+            @include trans;
+
+            width: 50%;
+            background: $white;
+            height: 100px;
+
+            @include mq(md) {
+                width: 25%;
+                height: 70px;
+            }
+
+            &.-active {
+                background: $blue;
+                color: $white;
+                
+                button {
+                    color: $white;
+                }
+            }
+    
+            button {
+                width: 100%;
+                height: 100%;
+                border: none;
+                background: none;
+                color: $darkGray;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 14px;
+                outline: none;
+                padding: 0 10px;
+
+                @include mq(md) {
+                    padding: 0 20px;
+                }
+            }
+        }
+
+        &__container {
+            position: relative;
+            padding-top: 75px;
+            margin-bottom: 60px;
+            min-height: 780px;
+            
+            @include mq(md) {
+                min-height: 500px;
+            }
+        }
+
+        &__wrapper {
+            @include trans;
+            position: absolute;
+            top: 75px;
+            opacity: 0;
+            height: 0;
+            pointer-events: none;
+            z-index: -1;
+
+            &.-active {
+                opacity: 1;
+                height: auto;
+                pointer-events: all;
+                z-index: 1;
+               }
+        }
+
+        &__video {
+            height: 0;
+            padding-bottom: 80%;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            border-radius: 7px;
+            margin-bottom: 40px;
+
+            @include mq(md) {
+                margin-bottom: 0;
+            }
+
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        }
+
+        &__content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            @include mq(md) {
+                padding-left: 40px;
+            }
+        }
+
+        &__subtitle {
+            color: $blue;
+            margin: 0;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        &__title {
+            color: $darkestGray;
+            font-size: 40px;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        &__button {
+            width: 200px;
+            border: none;
+            border-radius: 7px;
+            background: $blue;
+            color: $white;
+            line-height: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+    }
+}

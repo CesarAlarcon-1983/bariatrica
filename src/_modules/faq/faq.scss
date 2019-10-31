@@ -1,0 +1,135 @@
+.faq {
+    width: 100%;
+
+    &__wrapper {
+        background: $white;
+        border-radius: 7px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    &__question {
+        padding: 20px 10px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        @include mq(md) {
+            padding: 40px;
+        }
+
+        &.-open {
+            .faq__plus-icon {
+                .-vertical {
+                    transform: translate3d(-50%, -50%, 0) rotate(90deg);
+                }
+            }
+        }
+    }
+
+    &__plus-icon {
+        min-width: 30px;
+        height: 30px;
+        border: 1px solid $blue;
+        border-radius: 50%;
+        position: relative;
+        margin-right: 20px;
+
+        @include mq(md) {
+            margin-right: 40px;
+            min-width: 50px;
+            height: 50px;
+        }
+
+        span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            width: 15px;
+            height: 1px;
+            background: $blue;
+            
+            @include mq(md) {
+                width: 25px;
+            }
+
+            &.-vertical {
+                @include trans;
+
+                width: 1px;
+                height: 15px;
+
+                @include mq(md) {
+                    height: 25px;
+                }
+            }
+        }
+    }
+    
+    &__question-text {
+        color: $darkGray;
+        font-size: 18px;
+        margin: 0;
+        font-weight: 700;
+        width: 100%;
+
+        @include mq(md) {
+            font-size: 24px;
+        }
+    }
+
+    &__answer {
+        @include trans;
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        opacity: 0;
+        height: 0;
+        z-index: -1;
+        pointer-events: none;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        @include mq(md) {
+            padding-left: 130px;
+            padding-right: 0;
+        }
+
+        p {
+            opacity: 0;
+        }
+
+        &.-open {
+            opacity: 1;
+            height: auto;
+            z-index: 1;
+            pointer-events: all;
+            
+            p {
+                opacity: 1;
+            }
+
+            .faq__answer__group {
+                opacity: 1;
+            }
+        }
+
+        &__group {
+            opacity: 0;
+            width: 50%;
+            margin-bottom: 20px;
+            padding-right: 80px;
+
+            @include mq(md) {
+                width: 33.33%;
+            }
+
+            img {
+                width: auto;
+                height: 50px;
+            }
+        }
+    }
+}

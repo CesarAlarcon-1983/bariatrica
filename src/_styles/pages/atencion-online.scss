@@ -1,0 +1,159 @@
+.atencion-online {
+    &__hero {
+        height: 40vh;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            width: auto;
+            height: 100%;
+
+            @include mq(md) {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__container {
+            display: flex;
+            align-items: center;
+            height: 40vh;
+        }
+
+        &__title {
+            color: $white;
+            font-size: 40px;
+            margin: 0;
+            z-index: 2;
+            position: relative;
+        }
+    }
+
+    &__content {
+        background: $lightestGray;
+        padding: 50px 0;
+
+        @include mq(md) {
+            padding: 100px 0;
+        }
+
+        &__group {
+            margin-bottom: 40px;
+
+            @include mq(md) {
+                margin-bottom: 0;
+            }
+        }
+
+        &__title {
+            color: $blue;
+            font-size: 20px;
+            margin: 0;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+
+        &__text {
+            color: $darkGray;
+            margin: 0;
+            margin-bottom: 80px;
+            line-height: 1.5;
+        }
+
+        &__image {
+            position: relative;
+            height: 0;
+            width: 100%;
+            padding-bottom: 80%;
+            overflow: hidden;
+            border-radius: 7px;
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate3d(-50%, -50%, 0);
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__form {
+            background: $white;
+            padding: 20px 40px;
+            border-radius: 7px;
+            overflow: hidden;
+            
+            @include mq(md) {
+                margin-left: 50px;
+                padding: 40px 60px;
+            }
+        }
+
+        &__form-title {
+            color: $blue;
+            font-size: 14px;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        &__form-group {
+            width: 100%;
+            margin-bottom: 20px;
+            height: 50px;
+
+            &--textarea {
+                height: 100px;
+                margin-bottom: 40px;
+            }
+        }
+
+        &__input {
+            border: none;
+            border-bottom: 1px solid $midGray;
+            padding: 10px 0;
+            color: $midGray;
+            height: 100%;
+            width: 100%;
+            background: none;
+            resize: none;
+            font-size: 14px;
+            outline: none;
+        }
+
+        &__button {
+            background: $blue;
+            color: $white;
+            height: 50px;
+            text-transform: uppercase;
+            border: 1px solid $blue;
+            border-radius: 7px;
+            box-shadow: 0 5px 20px 1px lighten($blue, .15);
+            width: 100%;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 14px;
+
+            &--ghost {
+                background: $white;
+                color: $blue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: none;
+                margin-bottom: 0;
+                font-size: 16px;
+                font-weight: 700;
+
+                i {
+                    margin-right: 10px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

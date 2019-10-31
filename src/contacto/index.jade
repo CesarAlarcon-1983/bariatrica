@@ -2,7 +2,37 @@ extends ../_layouts/base
 
 block config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - var baseUrl = '../';
+
+  include ../_modules/locations/locations
 
 block content
-  p contacto page
+    main.contacto
+        .container
+            .row
+                .col-24.col-md-22.offset-md-1
+                    .row
+                        .col-24.col-md-14
+                            +locations('horizontal')
+
+                        .col-24.col-md-10
+                            .contacto__container
+                                .contacto__container__heading
+                                    h3.contacto__title Completa el formulario y te contestaremos a la brevedad.
+                                form.contacto__form
+                                    .contacto__form-group
+                                        input.contacto__input(placeholder="Nombre y apellido")
+                                    .contacto__form-group
+                                        input.contacto__input(placeholder="Email")
+                                    .contacto__form-group
+                                        input.contacto__input(placeholder="Teléfono")
+                                    .contacto__form-group
+                                        input.contacto__input(placeholder="País")
+                                    .contacto__form-group.contacto__form-group--textarea
+                                        textarea.contacto__input(placeholder="Consulta")
+                                    .contacto__form-group
+                                        button.contacto__button enviar
+                                    
+
+
+

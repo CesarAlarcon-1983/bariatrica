@@ -2,7 +2,42 @@ extends ../_layouts/base
 
 block config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - var baseUrl = '../';
+
+include ../_modules/article/article
 
 block content
-  p obesidad page
+    main.obesidad
+        section.obesidad__hero
+            img(src="/images/obesidad/hero.jpg")
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        .obesidad__hero__container
+                            h2.obesidad__hero__title Obesidad
+
+        section.obesidad__articles
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        .row
+                            .col-24.col-md-18.order-2.order-md-1
+                                .row
+                                    each article in site.data.articles
+                                        .col-24.col-md-12
+                                            .obesidad__articles__article
+                                                +article(article)
+                            .col-24.col-md-6.order-1.order-md-2
+                                .obesidad__articles__filters
+                                    .obesidad__articles__search
+                                        input.obesidad__articles__input(placeholder="Buscar...")
+                                        i.fa.fa-search
+                                    .obesidad__articles__options
+                                        h3.obesidad__articles__options-title categorías
+                                        ul.obesidad__articles__options-list
+                                            each option in site.data.articlesFilters
+                                                li.obesidad__articles__option
+                                                    a(href="#")=option
+
+
+

@@ -1,0 +1,26 @@
+[
+    {
+        "image":"/images/obesidad/art-1.jpg",
+        "date":"6 AGO 2019",
+        "title":"Lorem ipsum sit dolor amet consectetur",
+        "text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    },
+    {
+        "image":"/images/obesidad/art-2.jpg",
+        "date":"6 AGO 2019",
+        "title":"Lorem ipsum sit dolor amet consectetur",
+        "text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    },
+    {
+        "image":"/images/obesidad/art-3.jpg",
+        "date":"6 AGO 2019",
+        "title":"Lorem ipsum sit dolor amet consectetur",
+        "text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    },
+    {
+        "image":"/images/obesidad/art-4.jpg",
+        "date":"6 AGO 2019",
+        "title":"Lorem ipsum sit dolor amet consectetur",
+        "text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    }
+]

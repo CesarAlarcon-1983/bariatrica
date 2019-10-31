@@ -1,4 +1,7 @@
 .locations {
+    
+    $l: &;
+
     padding: 50px 0;
     background: $lightestGray;
 
@@ -93,5 +96,59 @@
         text-transform: uppercase;
         font-weight: 900;
         font-size: 14px;
+    }
+
+    &--horizontal {
+        #{$l}__heading {
+            height: 100px;
+        }
+
+
+        #{$l}__subtitle,
+        #{$l}__title {
+            text-align: left;
+        }
+
+        #{$l}__title {
+            margin-bottom: 40px;
+        }
+
+        #{$l}__container {
+            display: block;
+            margin-bottom: 40px;
+
+            @include mq(md) {
+                display: flex;
+            }
+        }
+
+        #{$l}__image {
+            padding-bottom: 50%;
+            width: 100%;
+
+            @include mq(md) {
+                padding-bottom: 35%;
+                width: 50%;
+            }
+
+            img {
+                height: auto;
+                width: 100%;
+
+                @include mq(md) {
+                    height: 100%;
+                    width: auto;
+                }
+            }
+        }
+
+        #{$l}__content {
+            min-height: 0;
+            width: 100%;
+
+            @include mq(md) {
+                width: 50%;
+            }
+        }
     }
 }

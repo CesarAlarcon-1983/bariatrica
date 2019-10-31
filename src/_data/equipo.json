@@ -1,62 +1,61 @@
 [
     {
-        "image":"https://picsum.photos/id/237/300/300",
+        "image":"/images/nosotros/juan-manuel-dalpiaz.jpg",
         "title":"Dr. Juan Manuel Dalpiaz",
         "text":"Médico Cirujano",
         "subtext":"MN 141.225"
     },
     {
-        "image":"https://picsum.photos/id/237/300/300",
+        "image":"/images/nosotros/carina-urdinola.jpg",
         "title":"Lic. Carina Urdinola",
         "text":"Nutricionista",
         "subtext":"MN 1618"
     },
     {
-        "image":"https://picsum.photos/id/237/300/300",
-        "title":"Lic. Carina Urdinola",
+        "image":"/images/nosotros/constanza-machain.jpg",
+        "title":"Lic. Constanza Machain Barzi",
         "text":"Nutricionista",
-        "subtext":"MN 1618"
+        "subtext":"MN 1657"
     },
     {
-        "image":"https://picsum.photos/id/237/300/300",
-        "title":"Lic. Carina Urdinola",
+        "image":"/images/nosotros/marta-dal-bo.jpg",
+        "title":"Lic. Marta Dal Bo",
         "text":"Nutricionista",
-        "subtext":"MN 1618"
+        "subtext":"MN 2261"
     },
     {
-        "image":"https://picsum.photos/id/237/300/300",
-        "title":"Lic. Carina Urdinola",
+        "image":"/images/nosotros/mariana-prieto.jpg",
+        "title":"Mariana Prieto",
         "text":"Nutricionista",
-        "subtext":"MN 1618"
+        "subtext":"MN 3203"
     },
     {
-        "image":"https://picsum.photos/id/237/300/300",
-        "title":"Lic. Carina Urdinola",
-        "text":"Nutricionista",
-        "subtext":"MN 1618"
+        "image":"/images/nosotros/constanza-soria.jpg",
+        "title":"Lic. Constanza Soria",
+        "text":"Psicóloga",
+        "subtext":"MN 58.157"
     },
     {
-        "image":"https://picsum.photos/id/237/300/300",
-        "title":"Lic. Carina Urdinola",
-        "text":"Nutricionista",
-        "subtext":"MN 1618"
+        "image":"/images/nosotros/viviana-maissonnave.jpg",
+        "title":"Dra. Viviana Maissonnave",
+        "text":"Psiquiatra",
+        "subtext":"MN 58.301"
     },
     {
-        "image":"https://picsum.photos/id/237/300/300",
-        "title":"Lic. Carina Urdinola",
-        "text":"Nutricionista",
-        "subtext":"MN 1618"
+        "image":"/images/nosotros/silvina-fidalgo.jpg",
+        "title":"Dra. Silvina Fidalgo",
+        "text":"Endocrinóloga",
+        "subtext":"MN 58.301"
     },
     {
-        "image":"https://picsum.photos/id/237/300/300",
-        "title":"Lic. Carina Urdinola",
-        "text":"Nutricionista",
-        "subtext":"MN 1618"
+        "image":"/images/nosotros/federiaco-etchegoyen.jpg",
+        "title":"Dr. Federico Etchegoyen",
+        "text":"Endocrinólogo",
+        "subtext":"MN"
     },
     {
-        "image":"https://picsum.photos/id/237/300/300",
-        "title":"Lic. Carina Urdinola",
-        "text":"Nutricionista",
-        "subtext":"MN 1618"
+        "image":"/images/nosotros/adriana-zancolli.jpg",
+        "title":"Adriana Zancolli",
+        "text":"Coordinadora"
     }
 ]
