@@ -209,6 +209,11 @@
             font-size: 14px;
             box-shadow: 0 5px 20px 1px lighten($blue, .15);
             outline: none;
+
+            &:disabled {
+                opacity: .5;
+                pointer-events: none;
+            }
         }
 
         &__group {

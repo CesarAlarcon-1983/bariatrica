@@ -12,7 +12,6 @@ var Header = function() {
     });
 
     //Nosotros More Button
-
     var moreButton = $('.nosotros__profile__more-button');
     var moreInfoContainer = $('.nosotros__profile__more-info');
 
@@ -55,7 +54,6 @@ var Header = function() {
     switcherInit();
 
     //faq
-
     var questions = $('.faq__question');
     var answers = $('.faq__answer');
 
@@ -71,18 +69,29 @@ var Header = function() {
     })
 
     //calculo IMC
-    var cacularButton = $('.por-donde-empiezo__options__button');
+    var calcularButton = $('.por-donde-empiezo__options__button');
     var resultadoImc = $('.por-donde-empiezo__options__resultado-imc');
+    var estatura = $('.-estatura');
+    var peso = $('.-peso');
 
-    cacularButton.on('click', function() {
-        var estatura = $('.-estatura').val();
-        var peso = $('.-peso').val();
-        
-        if(!estatura || !peso) {
-            return
+    peso.on('change', function() {
+        if(estatura.val() != '' && peso.val() != '') {
+            calcularButton.removeAttr('disabled');
         }
+    })
+
+    estatura.on('change', function() {
+        if(estatura.val() != '' && peso.val() != '') {
+            calcularButton.removeAttr('disabled');
+        }
+    })
+
+    calcularButton.on('click', function() {
+        var selectedEstatura = $('.-estatura').val();
+        var selectedPeso = $('.-peso').val();
         
-        var imc = (peso / (estatura/100)).toFixed(2);
+        
+        var imc = (selectedPeso / (selectedEstatura/100)).toFixed(2);
 
         resultadoImc.html(imc)
                 
