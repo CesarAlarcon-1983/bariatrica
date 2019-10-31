@@ -29,14 +29,19 @@ body {
 
 a,
 button {
-    color:$link;
+    color: $link;
     transition: all $duration $easingLight;
     cursor: pointer;
+    font-family: $mainFont;
 
     &:hover{
         color:$linkHover;
         text-decoration: none;
     }
+}
+
+input {
+  font-family: $mainFont;
 }
 
 ul {

@@ -72,7 +72,8 @@ block content
                                 .col-12.col-md-8
                                     .nosotros__equipo__container
                                         .nosotros__equipo__image
-                                            img(src=item.image)
+                                            if item.image
+                                                img(src=item.image)
                                         .nosotros__equipo__content
                                             h3.nosotros__equipo__content-title=item.title
                                             p.nosotros__equipo__text=item.text

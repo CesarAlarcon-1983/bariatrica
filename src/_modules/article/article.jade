@@ -1,10 +1,10 @@
 mixin article(article)
     .article
-        .article__image
+        a.article__image(href="#")
             img(src=article.image)
         .article__content
             span.article__date=article.date
-            h3.article__title=article.title
+            a.article__title(href="#")=article.title
             p.article__text=article.text
             .article__wrapper
                 a.article__show-article(href="#") ver artículo

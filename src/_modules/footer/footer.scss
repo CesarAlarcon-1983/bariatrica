@@ -82,6 +82,8 @@
     }
 
     &__group-title {
+        text-decoration: none;
+        display: block;
         color: $darkGray;
         font-size: 14px;
         margin: 0;

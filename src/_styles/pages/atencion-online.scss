@@ -11,11 +11,6 @@
             transform: translate3d(-50%, -50%, 0);
             width: auto;
             height: 100%;
-
-            @include mq(md) {
-                width: 100%;
-                height: auto;
-            }
         }
 
         &__container {
@@ -137,6 +132,8 @@
             margin-bottom: 20px;
             text-align: center;
             font-size: 14px;
+            text-decoration: none;
+            font-weight: 700;
 
             &--ghost {
                 background: $white;

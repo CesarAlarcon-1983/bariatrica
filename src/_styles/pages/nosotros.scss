@@ -48,7 +48,7 @@
             margin-bottom: 40px;
 
             @include mq(md) {
-                height: 65vh;
+                height: 60vh;
                 margin-bottom: 0;
             }
 
@@ -111,9 +111,6 @@
             li {
                 height: 30px;
                 width: 30px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 background: $midGray;
                 border-radius: 50%;
                 margin-right: 5px;
@@ -121,6 +118,11 @@
 
             a {
                 color: $white;
+                height: 30px;
+                width: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
 
@@ -208,20 +210,25 @@
         }
 
         &__image {
-            width: 100%;
-            display: flex;
-            align-items: center;
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
             margin-bottom: 20px;
+            background: $lightestGray;
+            border-radius: 50%;
+            position: relative;
 
             @include mq(md) {
-                width: 50%;
                 margin-bottom: 0;
             }
 
             img {   
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate3d(-50%, -50%, 0);
                 width: 150px;
                 height: 150px;
-                border-radius: 50%;
             }
         }
 
@@ -265,9 +272,6 @@
             li {
                 height: 30px;
                 width: 30px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 background: $midGray;
                 border-radius: 50%;
                 margin-right: 5px;
@@ -275,6 +279,11 @@
 
             a {
                 color: $white;
+                height: 30px;
+                width: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
