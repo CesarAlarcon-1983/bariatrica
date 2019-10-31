@@ -158,9 +158,13 @@
 
         &__title {
             color: $darkestGray;
-            font-size: 40px;
+            font-size: 30px;
             margin: 0;
             margin-bottom: 20px;
+
+            @include mq(md) {
+                font-size: 40px;
+            }
         }
 
         &__text {

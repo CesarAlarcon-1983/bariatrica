@@ -1,8 +1,8 @@
 .footer {
-    padding: 40px 0;
+    padding-top: 40px;
 
     @include mq(md) {
-        padding: 80px 0;
+        padding-top: 80px;
     }
 
     &__logo {
@@ -48,17 +48,32 @@
 
     &__container {
         display: flex;
+        flex-direction: column;        
+
+        @include mq(md) {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
     }
 
     &__group {
         width: 100%;
 
         &:first-child {
-            width: 40%;
+            order: 2;
+
+            @include mq(md) {
+                order: 1;
+            }
         }
 
         &:last-child {
-            width: 60%;
+            order: 1;
+
+            @include mq(md) {
+                order: 2;
+            }
         }
 
         @include mq(md) {
@@ -72,23 +87,17 @@
         margin: 0;
         margin-bottom: 20px;
         font-weight: 900;
-        
-        @include mq(md) {
-            text-align: center;
-        }
+        text-align: center;
     }
 
     &__social {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
-
-        @include mq(md) {
-            justify-content: center;
-        }
+        width: 100%;
+        justify-content: center;
 
         li {
-            margin: 0 20px 0 0;
+            margin: 0 10px;
 
             @include mq(md) {
                 margin: 0 10px;
@@ -103,7 +112,8 @@
 
 
     &__button {
-        width: 100%;
+        display: block;
+        width: 60%;
         line-height: 40px;
         outline: none;
         text-align: center;
@@ -114,5 +124,24 @@
         font-weight: 700;
         border-radius: 7px;
         background: $white;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include mq(md) {
+            margin-bottom: 0;
+            width: 100%;
+        }
+    }
+
+    &__copyright {
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        color: $midGray;
+        font-size: 12px;
+        border-top: 1px solid $lightGray;
+        margin-bottom: 0;
+        margin-top: 50px;
     }
 }

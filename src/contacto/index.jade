@@ -8,14 +8,21 @@ block config
 
 block content
     main.contacto
+        section.contacto__hero
+            img(src="/images/contacto/hero.jpg")
+            .container
+                .row
+                    .col-24.col-md-22.offset-md-1
+                        .contacto__hero__container
+                            h2.contacto__hero__title contacto
         .container
             .row
                 .col-24.col-md-22.offset-md-1
                     .row
-                        .col-24.col-md-14
+                        .col-24.col-md-14.order-2.order-md-1
                             +locations('horizontal')
 
-                        .col-24.col-md-10
+                        .col-24.col-md-10.order-1.order-md-2
                             .contacto__container
                                 .contacto__container__heading
                                     h3.contacto__title Completa el formulario y te contestaremos a la brevedad.
