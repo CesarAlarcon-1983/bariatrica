@@ -34,7 +34,7 @@ block content
                                             span MN 134.354
                                         ul.nosotros__profile__social
                                             li
-                                                a
+                                                a(href="https://www.linkedin.com/in/tom%C3%A1s-jakob-49394476/" target="_blank")
                                                     i.fa.fa-linkedin
                             .col-24
                                 .nosotros__profile__details
@@ -78,10 +78,11 @@ block content
                                             h3.nosotros__equipo__content-title=item.title
                                             p.nosotros__equipo__text=item.text
                                             p.nosotros__equipo__subtext=item.subtext
-                                            ul.nosotros__equipo__social
-                                                li
-                                                    a
-                                                        i.fa.fa-linkedin
+                                            if item.social
+                                                ul.nosotros__equipo__social
+                                                    li
+                                                        a(href=item.social target="_blank")
+                                                            i.fa.fa-linkedin
                                                         
         section.nosotros__locations
             .container

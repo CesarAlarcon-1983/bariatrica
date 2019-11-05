@@ -3,19 +3,22 @@
         "image":"/images/nosotros/juan-manuel-dalpiaz.jpg",
         "title":"Dr. Juan Manuel Dalpiaz",
         "text":"Médico Cirujano",
-        "subtext":"MN 141.225"
+        "subtext":"MN 141.225",
+        "social":"https://www.linkedin.com/in/juan-manuel-dalpiaz-20121591"
     },
     {
         "image":"/images/nosotros/carina-urdinola.jpg",
         "title":"Lic. Carina Urdinola",
         "text":"Nutricionista",
-        "subtext":"MN 1618"
+        "subtext":"MN 1618",
+        "social":"https://www.linkedin.com/in/carina-urdinola-064415195"
     },
     {
         "image":"/images/nosotros/constanza-machain.jpg",
         "title":"Lic. Constanza Machain Barzi",
         "text":"Nutricionista",
-        "subtext":"MN 1657"
+        "subtext":"MN 1657",
+        "social":"https://www.linkedin.com/in/constanza-machain-barzi-257b13b"
     },
     {
         "image":"/images/nosotros/marta-dal-bo.jpg",
@@ -26,34 +29,40 @@
     {
         "title":"Mariana Prieto",
         "text":"Nutricionista",
-        "subtext":"MN 3203"
+        "subtext":"MN 3203",
+        "social":"https://www.linkedin.com/in/mariana-valeria-prieto-161408b"
     },
     {
         "image":"/images/nosotros/constanza-soria.jpg",
         "title":"Lic. Constanza Soria",
         "text":"Psicóloga",
-        "subtext":"MN 58.157"
+        "subtext":"MN 58.157",
+        "social":"https://www.linkedin.com/in/mar%C3%ADa-constanza-soria-a17a70112"
     },
     {
         "image":"/images/nosotros/viviana-maissonnave.jpg",
         "title":"Dra. Viviana Maissonnave",
         "text":"Psiquiatra",
-        "subtext":"MN 58.301"
+        "subtext":"MN 58.301",
+        "social":"https://www.linkedin.com/in/viviana-maissonnave-931a4548"
     },
     {
         "image":"/images/nosotros/silvina-fidalgo.jpg",
         "title":"Dra. Silvina Fidalgo",
         "text":"Endocrinóloga",
-        "subtext":"MN 58.301"
+        "subtext":"MN 58.301",
+        "social":"https://www.linkedin.com/in/silvina-fidalgo-3168aa65"
     },
     {
         "title":"Dr. Federico Etchegoyen",
         "text":"Endocrinólogo",
-        "subtext":"MN"
+        "subtext":"MN",
+        "social":"https://www.linkedin.com/in/federico-etchegoyen-51a93521"
     },
     {
         "image":"/images/nosotros/adriana-zancolli.jpg",
         "title":"Adriana Zancolli",
-        "text":"Coordinadora"
+        "text":"Coordinadora",
+        "social":"https://www.linkedin.com/in/adriana-zancolli-a1a684194"
     }
 ]

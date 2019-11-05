@@ -36,7 +36,7 @@
     }
 
     &__list {
-        background: $lightestGray;
+        background: lighten($blue, 40%);
         padding: 50px 0 30px 0;
 
         @include mq(md) {
@@ -51,6 +51,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
+        overflow: hidden;
 
         @include mq(md) {
             flex-direction: row;
@@ -98,6 +99,7 @@
             display: block;
             text-align: center;
             box-shadow: 0 5px 20px 1px lighten($blue, .15);
+            text-decoration: none;
         }
     }
 }
