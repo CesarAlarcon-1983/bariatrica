@@ -9,27 +9,27 @@ mixin faq()
             .faq__answer
                 .faq__answer__group
                     img(src="/images/donde-empiezo/icon-1.png")
-                    p Evaluación psicológica
+                    p.faq__answer__text Evaluación psicológica
 
                 .faq__answer__group
                     img(src="/images/donde-empiezo/icon-2.png")
-                    p Laboratorio de sangre
+                    p.faq__answer__text Laboratorio de sangre
 
                 .faq__answer__group
                     img(src="/images/donde-empiezo/icon-3.png")
-                    p Electrocardiograma y evaluación cardiológica
+                    p.faq__answer__text Electrocardiograma y evaluación cardiológica
 
                 .faq__answer__group
                     img(src="/images/donde-empiezo/icon-4.png")
-                    p Espirometría y evaluación neumonológica
+                    p.faq__answer__text Espirometría y evaluación neumonológica
 
                 .faq__answer__group
                     img(src="/images/donde-empiezo/icon-5.png")
-                    p Ecografía abddominal y hepática
+                    p.faq__answer__text Ecografía abddominal y hepática
 
                 .faq__answer__group
                     img(src="/images/donde-empiezo/icon-6.png")
-                    p Endoscopía del esófago y estómago
+                    p.faq__answer__text Endoscopía del esófago y estómago
 
         .faq__wrapper
             .faq__question
@@ -38,7 +38,7 @@ mixin faq()
                     span.-vertical
                 .faq__question-text 2. ¿Qué resultados esperar?
             .faq__answer
-                p Lorem ipsum
+                p.faq__answer__text En promedio, los paciente pierden entre un 60 y un 70% del exceso de peso dentro del año de la operación. Por ejemplo, si usted pesa 100 kg y tiene 40 kg de sobrepeso, lo esperable es descender entre 24 y 30 kg.
 
         .faq__wrapper
             .faq__question
@@ -47,7 +47,7 @@ mixin faq()
                     span.-vertical
                 .faq__question-text 3. ¿Mi cirugía va a ser laparoscópica?
             .faq__answer
-                p Lorem ipsum
+                p.faq__answer__text Todas las cirugías comienzan por laparoscopía. Esto implica realizar 4 ó 5 incisiones de 5 mm ó 1 cm y operar a través de un sistema de video HD. En aproximadamente 1 de cada 1000 casos puede ser necesario convertir a cirugía abierta, particularmente en pacientes que cuentan con múltiples operaciones previas.
 
         .faq__wrapper
             .faq__question
@@ -56,7 +56,9 @@ mixin faq()
                     span.-vertical
                 .faq__question-text 4. ¿Cómo tengo que prepararme para la operación?
             .faq__answer
-                p Lorem ipsum
+                p.faq__answer__text Además de hacer los estudios preoperatorios, usted deberá realizar un tratamiento con nutricionistas y psicólogos orientado a mejorar el estilo de vida y de alimentación. El tratamiento previo a la cirugía será como mínimo de 2 meses.
+                p.faq__answer__text Desde el momento de la primer consulta hasta el día de comenzar la dieta líquida prequirúrgica, deberá descender al menos el 5% de su peso. Este descenso ayuda a disminuir el tamaño del hígado, la cantidad de grasa visceral y disminuye el riesgo y la duración de la operación. Los cambios en las hábitos llevarán a mejores resultados luego de la cirugía.
+                p.faq__answer__text Si usted fuma es recomendable dejar de fumar al menos un mes antes de la cirugía.
 
         .faq__wrapper
             .faq__question
@@ -65,7 +67,19 @@ mixin faq()
                     span.-vertical
                 .faq__question-text 5. Reglas alimentarias generales para la cirugía
             .faq__answer
-                p Lorem ipsum
+                h3.faq__answer__title Preparación pre-quirúrgica
+                p.faq__answer__text Es necesario descender mínimo el 5% del peso inicial antes de comenzar la dieta líquida.
+                p.faq__answer__text Este descenso se realiza en dos etapas:
+                ul.faq__answer__list
+                    li La adaptación a una alimentación saludable (no una dieta más). Comienza desde el inicio de su tratamiento.
+                    li La dieta líquida pre-quirúrgica, aproximadamente dos semanas.
+                p.faq__answer__text A partir de su primer entrevista deberá intentar iniciar cambios de hábitos:
+                ul.faq__answer__list
+                    li Comenzar a ingerir alimentos mínimo 5 veces al día y evitar el PICOTEO.
+                    li Consumir alimentos ricos en proteínas y fibras con poca grasa e hidratos de carbono
+                    li Iniciar actividad física (dentro de la posibilidades de cada uno)
+                    li Familiarizarse con el tratamiento nutricional post cirugía
+                p.faq__answer__text El objetivo del descenso de peso previo a la cirugía es la disminución del tamaño del hígado ya que disminuye la probabilidad de sufrir complicaciones y promueve una mejor recuperación.
 
         .faq__wrapper
             .faq__question
@@ -74,7 +88,8 @@ mixin faq()
                     span.-vertical
                 .faq__question-text 6. ¿Por qué evaluación y preparación psicológica?
             .faq__answer
-                p Lorem ipsum
+                p.faq__answer__text El paciente en tratamiento para Cirugía Bariátrica debe seguir un programa de educación alimentaria y de la conducta, debiendo cambiar el hábito alimentario junto a la calidad de los alimentos. Por este motivo es importante realizar una preparación adecuada con el equipo multidisciplinario.
+                p.faq__answer__text Es fundamental tomar conciencia de que la obesidad es una enfermedad. El primer paso es reconocer que se necesita ayuda para cambiar estos hábitos que han sido perjudiciales para su vida. El acompañamiento psicológico es determinante en el éxito del proceso de adaptación.
 
         .faq__wrapper
             .faq__question
@@ -83,4 +98,11 @@ mixin faq()
                     span.-vertical
                 .faq__question-text 7. ¿Qué se valora en las evaluaciones psicológicas?
             .faq__answer
-                p Lorem ipsum
+                ul.faq__answer__list
+                    li Los hábitos alimenticios y la posible existencia de trastornos de la conducta alimentaria.
+                    li La capacidad de la persona para entender en qué consiste la cirugía, los riesgos de ésta y los cuidados que requerirá de por vida.
+                    li La capacidad para dar el consentimiento informado y hacerse cargo del tratamiento a largo plazo.
+                    li Los posibles rasgos patológicos de la personalidad o cualquier alteración emocional que el paciente pueda presentar antes del procedimiento.
+                p.faq__answer__text Esta evaluación, intenta maximizar las posibilidades de éxito del tratamiento y disminuir los efectos no deseados y la ineficacia de ésta.
+                p.faq__answer__text Se realizan entrevistas individuales o grupales pre y post-quirúrgicas, centrándonos en temas que afectan al paciente desde las primeras etapas de la recuperación hasta el mantenimiento continuo de la pérdida de peso.
+                p.faq__answer__text El objetivo es brindar alivio e información promoviendo la salud emocional y mejorando la calidad de vida de cada paciente y de su entorno, previniendo así, posibles situaciones de crisis y recaídas. Es más fácil llegar a la meta cuando se trabaja en equipo.

@@ -94,7 +94,7 @@
 
         @include mq(md) {
             padding-left: 130px;
-            padding-right: 0;
+            padding-right: 130px;
         }
 
         p {
@@ -106,12 +106,16 @@
             height: auto;
             z-index: 1;
             pointer-events: all;
+            padding-bottom: 50px;
             
             p {
                 opacity: 1;
             }
 
-            .faq__answer__group {
+            .faq__answer__group,
+            .faq__answer__title,
+            .faq__answer__text,
+            .faq__answer__list {
                 opacity: 1;
             }
         }
@@ -133,6 +137,7 @@
                 height: 50px;
                 margin-left: auto;
                 margin-right: auto;
+                margin-bottom: 20px;
 
                 @include mq(md) {
                     margin-left: 0;
@@ -143,6 +148,30 @@
 
             p {
                 line-height: 1.5;
+            }
+        }
+
+        &__title {
+            opacity: 0;
+            text-transform: uppercase;
+            color: $darkestGray;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            opacity: 0;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        &__list {
+            opacity: 0;
+            margin-bottom: 20px;
+            list-style: square inside;
+
+            li {
+                margin-bottom: 10px;
             }
         }
     }

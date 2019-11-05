@@ -11,7 +11,7 @@
         margin-bottom: 540px;
 
         @include mq(md) {
-            height: 80vh;
+            height: 90vh;
             margin-bottom: 0;
         }
 
@@ -100,9 +100,9 @@
             height: 60vh;
 
             @include mq(md) {
-                height: 80vh;
+                height: 90vh;
             }
-            }
+        }
 
         .slick-slider,
         .slick-track,
@@ -111,7 +111,7 @@
             height: 60vh;
 
             @include mq(md) {
-                height: 80vh;
+                height: 90vh;
             }
         }
 
@@ -177,7 +177,7 @@
             position: relative;
             
             @include mq(md) {
-                height: 80vh;
+                height: 90vh;
                 padding-top: 100px;
             }
 
