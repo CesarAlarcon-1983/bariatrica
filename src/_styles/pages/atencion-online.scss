@@ -1,6 +1,6 @@
 .atencion-online {
     &__hero {
-        height: 40vh;
+        height: 35vh;
         position: relative;
         overflow: hidden;
 
@@ -11,12 +11,17 @@
             transform: translate3d(-50%, -50%, 0);
             width: auto;
             height: 100%;
+
+            @include mq(md) {
+                width: 100%;
+                height: auto;
+            }
         }
 
         &__container {
             display: flex;
             align-items: center;
-            height: 40vh;
+            height: 35vh;
         }
 
         &__title {
@@ -29,7 +34,7 @@
     }
 
     &__content {
-        background: $lightestGray;
+        background: lighten($blue, 40%);
         padding: 50px 0;
 
         @include mq(md) {
@@ -45,7 +50,7 @@
         }
 
         &__title {
-            color: $blue;
+            color: $turquoise;
             font-size: 20px;
             margin: 0;
             margin-bottom: 40px;
@@ -90,7 +95,7 @@
         }
 
         &__form-title {
-            color: $blue;
+            color: $turquoise;
             font-size: 14px;
             margin: 0;
             margin-bottom: 20px;
@@ -136,8 +141,9 @@
             font-weight: 700;
 
             &--ghost {
+                border: 1px solid $turquoise;
                 background: $white;
-                color: $blue;
+                color: $turquoise;
                 display: flex;
                 justify-content: center;
                 align-items: center;

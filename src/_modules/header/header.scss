@@ -15,7 +15,8 @@
         padding: 15px 0;
 
         @include mq(md) {
-            padding: 20px 0;
+            padding: 10px 0;
+            height: 12vh;
         }
     }
 
@@ -79,15 +80,19 @@
             text-transform: uppercase;
             font-weight: 900;
             font-size: 18px;
-            
+            white-space: nowrap;
             @include mq(md) {
                 font-size: 12px;
+            }
+
+            &:hover {
+                color: $turquoise;
             }
         }
     }
 
     &__phone {
-        border: 1px solid $blue;
+        border: 1px solid $turquoise;
         margin-left: 20px;
         height: 100%;
         border-radius: 5px;
@@ -100,17 +105,29 @@
 
         @include mq(md) {
             padding: 0 20px;
+            height: 40px;
         }
 
         i {
             margin-right: 10px;
+            color: $turquoise;
         }
 
         span {
             font-size: 12px;
+            color: $turquoise;
 
             @include mq(md) {
                 font-size: 16px;
+            }
+        }
+
+        &:hover {
+            border: 1px solid ($turquoise + #333);
+
+            i,
+            span {
+                color: $turquoise + #333;
             }
         }
     }

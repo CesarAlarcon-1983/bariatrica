@@ -2,15 +2,8 @@
     
     $l: &;
 
-    padding: 50px 0;
-    background: $lightestGray;
-
-    @include mq(md) {
-        padding: 100px 0;
-    }
-
     &__subtitle {
-        color: $blue;
+        color: $turquoise;
         text-transform: uppercase;
         font-size: 16px;
         text-align: center;
@@ -72,18 +65,18 @@
     &__content-title {
         margin: 0;
         margin-bottom: 20px;
-        color: $blue;
+        color: $turquoise;
     }
 
     &__content-text {
         margin: 0;
         margin-bottom: 20px;
         color: $darkestGray;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     &__webpage {
-        color: $blue;
+        color: $turquoise;
         text-decoration: none;
         font-size: 18px;
     }
@@ -127,7 +120,7 @@
             width: 100%;
 
             @include mq(md) {
-                padding-bottom: 35%;
+                padding-bottom: 30%;
                 width: 50%;
             }
 

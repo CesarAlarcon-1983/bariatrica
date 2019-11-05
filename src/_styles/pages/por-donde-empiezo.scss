@@ -2,7 +2,7 @@
     overflow: hidden;
 
     &__hero {
-        height: 40vh;
+        height: 35vh;
         position: relative;
         overflow: hidden;
 
@@ -23,7 +23,7 @@
         &__container {
             display: flex;
             align-items: center;
-            height: 40vh;
+            height: 35vh;
         }
 
         &__title {
@@ -36,7 +36,7 @@
     }
 
     &__options {
-        background: $lightestGray;
+        background: lighten($blue, 40%);
 
         &__menu {
             display: flex;
@@ -63,7 +63,7 @@
             }
 
             &.-active {
-                background: $blue;
+                background: $turquoise;
                 color: $white;
                 
                 button {
@@ -118,7 +118,7 @@
         }
 
         &__subtitle {
-            color: $blue;
+            color: $turquoise;
             margin: 0;
             margin-bottom: 20px;
             text-transform: uppercase;
@@ -133,7 +133,7 @@
             margin-bottom: 40px;
 
             @include mq(md) {
-                font-size: 40px;
+                font-size: 34px;
             }
         }
 
@@ -248,7 +248,7 @@
         }
 
         &__content-title {
-            color: $blue;
+            color: $turquoise;
             margin: 0;
             margin-bottom: 20px;
         }
@@ -269,7 +269,7 @@
             border-radius: 50%;
 
             span {
-                color: $blue;
+                color: $turquoise;
                 font-weight: 900;
             }
         }
@@ -305,8 +305,8 @@
             margin: 0;
             margin-bottom: 20px;
 
-            &--blue {
-                color: $blue;
+            &--turquoise {
+                color: $turquoise;
                 font-size: 20px;
                 font-weight: 700;
                 line-height: 1.4;

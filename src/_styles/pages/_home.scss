@@ -2,7 +2,7 @@
 
     $h:&;
 
-    background: $lightestGray;
+    background: lighten($blue, 40%);
     position: relative;
     
     &__hero { 
@@ -245,6 +245,7 @@
             font-size: 12px;
             z-index: 2;
             position: relative;
+            font-weight: 700;
 
             @include mq(md) {
                 width: 150px;
@@ -347,13 +348,16 @@
         }
     }
 
+    &__locations {
+        padding: 100px 0;
+    }
+
     &__testimonios {
         position: relative;
         overflow: hidden;
         
         @include mq(md) {
-            height: 33.3vw;
-
+            height: 28vw;
         }
 
         img {
@@ -363,15 +367,12 @@
             transform: translate3d(-50%, -50%, 0);
             width: auto;
             height: 100%;
-            // filter: grayscale(100%);
 
             @include mq(md) {
-                width: auto;
-                height: 100%;
+                width: 100%;
+                height: auto;
             }
         }
-
-        // @include gradientOverlay;
 
         &__slider {
             z-index: 20;
@@ -389,7 +390,7 @@
             margin-bottom: 0 !important;
 
             @include mq(md) {
-                height: 33.3vw;
+                height: 28vw;
             }
         }
 
@@ -403,7 +404,7 @@
             }
 
             @include mq(md) {
-                height: 33.3vw;
+                height: 28vw;
             }
         }
 
@@ -422,7 +423,7 @@
             align-items: center;
 
             @include mq(md) {
-                height: 33.3vw;
+                height: 28vw;
             }
         }
 

@@ -65,6 +65,9 @@ var Header = function() {
             $(this).toggleClass('-open');
             $(answers[questionIndex]).toggleClass('-open');
 
+            var wrapperHeight = $(contents[1]).height();
+            container.height(wrapperHeight);
+
         }
     })
 
@@ -96,6 +99,48 @@ var Header = function() {
         resultadoImc.html(imc)
                 
     })
+
+    var viewport = 0;
+    var scroll = 0;
+
+    if($(window).width() < 640) {
+        viewport = 110;
+        scroll = 100;
+    } else {
+        viewport = 400;
+        scroll = 400;
+    }
+
+    $('a[href*="#"]')
+    // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
+        // On-page links
+        if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+            &&
+            location.hostname == this.hostname
+        ) {
+          // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            // Does a scroll target exist?
+            if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+
+                $('html, body').animate({
+                    scrollTop: target.offset().top - viewport
+                }, 1000, function() {
+                // Callback after animation
+                // Must change focus!
+                    var $target = $(target);
+                    $target.focus();
+                });
+            }
+        }
+    });
 };
 
 module.exports = Header;

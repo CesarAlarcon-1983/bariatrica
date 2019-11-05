@@ -3,9 +3,7 @@
     $n: &;
     
     &__hero {
-        // @include gradientOverlay;
-
-        height: 40vh;
+        height: 35vh;
         position: relative;
         overflow: hidden;
 
@@ -26,7 +24,7 @@
         &__container {
             display: flex;
             align-items: center;
-            height: 40vh;
+            height: 35vh;
         }
 
         &__title {
@@ -74,7 +72,7 @@
         }
 
         &__subtitle {
-            color: $blue;
+            color: $turquoise;
             text-transform: uppercase;
             font-size: 16px;
             margin: 0;
@@ -82,7 +80,7 @@
         }
 
         &__title {
-            color: $blue;
+            color: $turquoise;
             font-size: 30px;
             margin: 0;
             margin-bottom: 60px;
@@ -99,9 +97,34 @@
             font-size: 12px;
             margin: 0;
             margin-bottom: 20px;
+
             span {
                 display: block;
                 color: $darkGray;
+            }
+        }
+
+        &__details {
+            padding: 40px 0;
+            position: relative;
+
+            p {
+                margin: 0;
+                color: $turquoise;
+                font-size: 18px;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                background: lighten($blue, 40%);
+                top: 0;
+                left: -100%;
+                width: 1000%;
+                height: 100%;
+                z-index: -1;
             }
         }
 
@@ -129,7 +152,7 @@
         &__more-info {
             @include trans;
 
-            background: $lightestGray;
+            background: lighten($blue, 40%);
             margin-bottom: 40px;
             height: 0;
             overflow: hidden;
@@ -137,7 +160,7 @@
 
             &.-open {
                 height: auto;
-                padding: 100px 0;
+                padding: 50px 0;
                 overflow: visible;
                 opacity: 1;
 
@@ -158,11 +181,6 @@
                 line-height: 1.5;
             }
 
-            .-blue {
-                color: $blue;
-                font-weight: 900;
-            }
-
             .-quote {
                 font-size: 18px;
                 font-style: italic;
@@ -173,8 +191,8 @@
 
         &__more-button {
             background: $white;
-            border: 1px solid $blue;
-            color: $blue;
+            border: 1px solid $turquoise;
+            color: $turquoise;
             line-height: 40px;
             text-align: center;
             width: 100%;
@@ -214,7 +232,7 @@
             height: 150px;
             overflow: hidden;
             margin-bottom: 20px;
-            background: $lightestGray;
+            background: lighten($blue, 40%);
             border-radius: 50%;
             position: relative;
 
@@ -242,24 +260,24 @@
         }
 
         &__content-title {
-            color: $blue;
+            color: $turquoise;
             margin: 0;
             margin-bottom: 20px;
         }
 
         &__text {
             color: $darkestGray;
-            font-weight: 900;
             font-size: 18px;
             margin: 0;
             margin-bottom: 5px;
         }
 
         &__subtext {
-            color: $darkestGray;
+            color: $midGray;
             font-size: 12px;
             margin: 0;
             margin-bottom: 20px;
+
             span {
                 display: block;
                 color: $darkGray;
@@ -289,6 +307,11 @@
     }
 
     &__locations {
-        background: $lightestGray;
+        padding: 50px 0;
+        background: lighten($blue, 40%);
+
+        @include mq(md) {
+            padding: 100px 0;
+        }
     }
 }

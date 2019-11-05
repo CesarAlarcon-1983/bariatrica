@@ -5,7 +5,7 @@ include ./_modules/locations/locations
 
 block content
     main.home
-        section.home__hero
+        section.home__hero#hero
             form.home__hero__form
                 h3.home__hero__form-title solicitá un turno
                 .home__hero__form-group
@@ -89,7 +89,8 @@ block content
         .container
             .row
                 .col-24.col-md-22.offset-md-1
-                    +locations()
+                    .home__locations
+                        +locations()
 
         section.home__testimonios
             .home__testimonios__background

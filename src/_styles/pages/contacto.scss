@@ -1,8 +1,8 @@
 .contacto {
-    background: $lightestGray;
+    background: lighten($blue, 40%);
 
     &__hero {
-        height: 40vh;
+        height: 35vh;
         position: relative;
         overflow: hidden;
         margin-bottom: 50px;
@@ -16,17 +16,19 @@
             top: 50%;
             left: 50%;
             transform: translate3d(-50%, -50%, 0);
+            width: auto;
+            height: 100%;
 
             @include mq(md) {
-                width: auto;
-                height: 100%;
+                width: 100%;
+                height: auto;
             }
         }
 
         &__container {
             display: flex;
             align-items: center;
-            height: 40vh;
+            height: 35vh;
         }
 
         &__title {
@@ -38,11 +40,15 @@
         }
     }
 
+    &__locations {
+        padding: 50px 0;
+    }
+
     &__container{ 
         padding: 0 0 50px 0;
 
         @include mq(md) {
-            padding: 100px 0 60px 0;
+            padding: 50px 0;
         }
 
         &__heading{ 
@@ -52,7 +58,7 @@
 
     &__title {
         margin: 0;
-        color: $blue;
+        color: $turquoise;
         font-size: 20px;
 
         @include mq(md) {
@@ -78,7 +84,7 @@
         height: 50px;
 
         &--textarea {
-            height: 200px;
+            height: 150px;
             margin-bottom: 40px;
         }
     }
@@ -108,22 +114,6 @@
         margin-bottom: 20px;
         text-align: center;
         font-size: 14px;
-
-        &--ghost {
-            background: $white;
-            color: $blue;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: none;
-            margin-bottom: 0;
-            font-size: 16px;
-            font-weight: 700;
-
-            i {
-                margin-right: 10px;
-                font-size: 20px;
-            }
-        }
+        font-weight: 700;
     }
 }
