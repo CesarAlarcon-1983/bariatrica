@@ -37,6 +37,7 @@ button {
     transition: all $duration $easingLight;
     cursor: pointer;
     font-family: $mainFont;
+    text-decoration: none;
 
     &:hover{
         color:$linkHover;

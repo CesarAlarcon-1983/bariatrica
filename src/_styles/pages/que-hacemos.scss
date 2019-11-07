@@ -112,29 +112,38 @@
                 height: auto;
                 pointer-events: all;
                 z-index: 1;
-               }
+            }
+
+            &[data-content="cirugia-3"] {
+                .que-hacemos__options__video {
+                    padding-bottom: 56.5%;
+                }
+            }
         }
 
         &__video {
             height: 0;
-            padding-bottom: 80%;
+            padding-bottom: 75%;
             width: 100%;
             overflow: hidden;
             position: relative;
             border-radius: 7px;
             margin-bottom: 40px;
+            outline: none;
 
             @include mq(md) {
                 margin-bottom: 0;
             }
 
-            iframe {
+            video {
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 100%;
+                width: auto;
                 height: 100%;
-                border: none;
+                border: transparent;
+                border-radius: 7px;
+                outline: none;
             }
         }
 
