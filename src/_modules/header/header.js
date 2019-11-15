@@ -94,11 +94,10 @@ var Header = function() {
         var selectedPeso = $('.-peso').val();
         
         
-        var imc = (selectedPeso / (selectedEstatura/100)).toFixed(2);
+        var imc = (selectedPeso / ((selectedEstatura/100)*(selectedEstatura/100))).toFixed(2);
 
-        resultadoImc.html(imc)
-                
-    })
+        resultadoImc.html(imc);
+    });
 
     var viewport = 0;
     var scroll = 0;
