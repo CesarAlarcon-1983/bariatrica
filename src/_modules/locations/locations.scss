@@ -75,14 +75,14 @@
         font-size: 16px;
     }
 
-    &__webpage {
-        color: $turquoise;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 700;
+    &__buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
 
-    &__map-link {
+    &__map-link,
+    &__appoinment {
         position: absolute;
         bottom: 20px;
         left: 20px;
@@ -91,6 +91,25 @@
         font-weight: 900;
         font-size: 14px;
         color: $turquoise;
+        display: block;
+
+        &:hover {
+            color: $linkHover + #333;
+        }
+    }
+
+
+    &__appoinment {
+        left: auto;
+        right: 20px;
+        background: $turquoise;
+        height: 20px;
+        font-size: 12px;
+        color: $white;
+        line-height: 20px;
+        padding: 0 10px;
+        border-radius: 3px;
+        bottom: 18px;
     }
 
     &--horizontal {
@@ -122,7 +141,7 @@
             width: 100%;
 
             @include mq(md) {
-                padding-bottom: 30%;
+                padding-bottom: 37%;
                 width: 50%;
             }
 
@@ -144,6 +163,10 @@
             @include mq(md) {
                 width: 50%;
             }
+        }
+
+        #{$l}__content-text {
+            margin-bottom: 40px;
         }
     }
 }

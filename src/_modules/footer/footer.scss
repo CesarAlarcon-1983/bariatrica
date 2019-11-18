@@ -25,6 +25,7 @@
     &__wrapper {
         display: flex;
         margin-bottom: 20px;
+        justify-content: space-between;
 
         @include mq(md) {
             margin-bottom: 0;
@@ -32,17 +33,27 @@
     }
 
     &__list {
-        width: 50%;
+        width: 48%;
+
+        @include mq(md) {
+            width: 45%;
+        }
     }
 
     &__item {
         margin-bottom: 20px;
         
+        &:not(:last-child) {
+            border-bottom: 1px solid $lightGray;
+            padding-bottom: 20px;
+        }
+
         a {
             color: $midGray;
             text-decoration: none;
             font-size: 14px;
             font-weight: 900;
+            white-space: nowrap;
         }
     }
 

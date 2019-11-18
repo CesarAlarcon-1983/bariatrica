@@ -109,11 +109,12 @@
             position: relative;
 
             p {
+                columns: 2;
                 margin: 0;
                 color: $turquoise;
                 font-size: 18px;
                 font-weight: 700;
-                text-align: center;
+                text-align: left;
             }
 
             &:after {
@@ -153,10 +154,10 @@
             @include trans;
 
             background: lighten($blue, 40%);
-            margin-bottom: 40px;
             height: 0;
             overflow: hidden;
             opacity: 0;
+            position: relative;
 
             &.-open {
                 height: auto;
@@ -175,6 +176,7 @@
             padding-right: 40px;
             height: 0;
             overflow: hidden;
+            
             p {
                 margin: 0;
                 margin-bottom: 20px;
@@ -190,7 +192,7 @@
         }
 
         &__more-button {
-            background: $white;
+            background: transparent;
             border: 1px solid $turquoise;
             color: $turquoise;
             line-height: 40px;
@@ -204,6 +206,20 @@
             font-size: 14px;
             font-weight: 700;
             border-radius: 7px;
+            // margin-top: 40px;
+            margin-bottom: 40px;
+
+            &:after {
+                content: '';
+                position: absolute;
+                background: lighten($blue, 40%);
+                top: 0;
+                left: -100%;
+                width: 1000%;
+                height: 100%;
+                z-index: -1;
+            }
+
 
             @include mq(md) {
                 width: 150px;

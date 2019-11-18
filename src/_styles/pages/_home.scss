@@ -246,6 +246,8 @@
             z-index: 2;
             position: relative;
             font-weight: 700;
+            display: block;
+            text-decoration: none;
 
             @include mq(md) {
                 width: 150px;
@@ -431,7 +433,7 @@
             width: 90%;
 
             @include mq(md) {
-                width: 40%;
+                width: 50%;
             }
         }
 
@@ -454,7 +456,7 @@
             font-weight: 900;
 
             @include mq(md) {
-                font-size: 30px;
+                font-size: 26px;
             }
         }
 

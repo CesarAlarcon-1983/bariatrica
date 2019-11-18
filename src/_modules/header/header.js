@@ -28,7 +28,7 @@ var Header = function() {
     //switcher
     var targets = $('[data-target]');
     var contents = $('[data-content]');
-    var container = $('.por-donde-empiezo__options__container');
+    var container = $('.-js-container');
 
     function switcherInit() {
         $(targets[0]).addClass('-active');
@@ -52,7 +52,18 @@ var Header = function() {
     })
 
     switcherInit();
+    // Menu icons selection
+    var url = window.location.pathname;
 
+    var urlRegExp = new RegExp(url == '/' ? window.location.origin + '/?$' : url.replace(/\/$/,'') + '$');
+
+    $('.header__list li a').each(function(){
+        if(urlRegExp.test(this.href.replace(/\/$/,''))){
+            $(this).addClass('-active');
+
+            return;
+        }
+    });
     //faq
     var questions = $('.faq__question');
     var answers = $('.faq__answer');
